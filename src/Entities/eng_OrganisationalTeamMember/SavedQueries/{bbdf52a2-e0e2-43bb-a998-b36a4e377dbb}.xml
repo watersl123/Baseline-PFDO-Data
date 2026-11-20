@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{bbdf52a2-e0e2-43bb-a998-b36a4e377dbb}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="eng_name" select="1" icon="1" preview="1">
+        <row name="result" id="eng_organisationalteammemberid">
+          <cell name="eng_entrauser" width="101" />
+          <cell name="eng_role" width="100" />
+          <cell name="eng_startdate" width="100" />
+          <cell name="eng_enddate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="eng_organisationalteammember">
+          <attribute name="eng_organisationalteammemberid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="eng_entrauser" />
+          <attribute name="eng_role" />
+          <attribute name="eng_startdate" />
+          <attribute name="eng_enddate" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Organisational Team Members" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

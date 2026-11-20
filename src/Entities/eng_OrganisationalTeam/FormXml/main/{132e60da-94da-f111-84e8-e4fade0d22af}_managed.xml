@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{132e60da-94da-f111-84e8-e4fade0d22af}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{7DE28738-315E-4635-8F7C-FD938CBC36FC}" IsUserDefined="1" labelid="{79334532-9688-45f4-bfcd-bf94f1d93501}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{21489799-26D9-406D-9C2B-E027163EB7B1}" labelid="{25f68f45-111e-4ac7-aff3-25be82e499f7}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{525CFCB1-1DAA-40DC-9546-3F710E67507E}" labelid="{f08ad332-213b-43ab-8a1d-af9e274fc4c4}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="eng_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="eng_Name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bbd287e4-65fe-437d-978b-ea9f5feb1ec9}" locklevel="0" colspan="1" rowspan="1" labelid="{f62e9b8e-b5b6-41d2-8a64-79a21b0384e9}">
+                        <labels>
+                          <label description="Team Code" languagecode="1033" />
+                        </labels>
+                        <control id="eng_teamcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="eng_teamcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6F8A1861-CAC0-462B-B216-E21DD2A7FC54}" labelid="{ae815f50-d164-42cf-b49d-66de0d8adc17}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="teammember_section" id="a7c0102a-451d-406e-a2c6-a74791ebebf9" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{4a86ca31-a129-4349-a166-53377bc681a8}">
+                  <labels>
+                    <label description="Team Members" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{3c7c0f47-d58c-4c74-a248-0755e423801d}" rowspan="4" colspan="1" auto="false" labelid="{216c12ee-7456-49ed-a9c4-bfaa169e6d11}">
+                        <labels>
+                          <label description="Team Members" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="TeamMembers_grid" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>true</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName />
+                            <TargetEntityType>eng_organisationalteammember</TargetEntityType>
+                            <ViewId>{BBDF52A2-E0E2-43BB-A998-B36A4E377DBB}</ViewId>
+                            <ViewIds>{BBDF52A2-E0E2-43BB-A998-B36A4E377DBB}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{d0a417bd-96df-4bda-8b6b-7f2505fdeda6}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{607806d6-b141-481d-b190-c0eb182b2838}" showlabel="false" labelid="{0742a69e-8cae-4558-9ea3-0e7eb6b2174f}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5416c760-8c56-40c4-84b0-acde94995ec7}" showlabel="false" labelid="{6ccd4948-6985-4e6a-82b7-92e69b85bb81}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{75273aee-4047-4274-bcf1-2f605b475ae7}" showlabel="false" labelid="{91485686-7d5f-4099-b853-a3735ceaa7f4}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{0e5b4911-83af-4dce-a91f-63ecb1fea2c1}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{aa4098dc-64d4-4948-b2ad-965776c23354}" showlabel="false" labelid="{a8ff1ad8-09e4-4a3c-856d-f28c3fff429d}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4de33163-8c92-4c08-8e6f-f4a7721ccdf6}" showlabel="false" labelid="{62db39f1-f37a-456c-9715-e259a962cc93}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7f545cf7-8269-44f6-a6b5-143b91dbe2cd}" showlabel="false" labelid="{89a067ef-8143-450f-afae-53d353e1e927}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Team Members List " languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="List of Team Members" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

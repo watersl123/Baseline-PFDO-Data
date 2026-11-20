@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{0801ab01-85ef-43be-8e4b-c113ec662291}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="eng_organisationname" select="1" icon="1" preview="1">
+        <row name="result" id="eng_organisationid">
+          <cell name="eng_organisationname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="eng_organisation">
+          <attribute name="eng_organisationid" />
+          <attribute name="eng_organisationname" />
+          <attribute name="createdon" />
+          <order attribute="eng_organisationname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Organisations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
