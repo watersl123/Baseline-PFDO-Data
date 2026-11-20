@@ -1,0 +1,8 @@
+{
+	"mcpServers": {
+		"pfdo-dataverse-dev": {
+			"url": " https://orgd37b6e6e.crm17.dynamics.com/api/mcp",
+			"type": "http"
+		}
+	}
+}
