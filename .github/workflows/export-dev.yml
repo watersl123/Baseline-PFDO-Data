@@ -41,3 +41,10 @@ jobs:
           solution-folder: solutions/${{ vars.SOLUTION_NAME }}
           solution-type: Unmanaged
           overwrite-files: true
+
+      - name: Upload unmanaged solution ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ vars.SOLUTION_NAME }}-unmanaged
+          path: out/${{ vars.SOLUTION_NAME }}.zip
+          if-no-files-found: error
